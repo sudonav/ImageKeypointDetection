@@ -138,10 +138,10 @@ def applyGaussianFilter(image, colorImage, length=7):
         outputImage = [[0 for j in range(len(image[0]))] for i in range(len(image))]
     return keypoints
 
-image = readImage('task2.jpg', True)
-colorImage = readImage('task2.jpg', False)
+image = readImage('input.jpg', True)
+colorImage = readImage('input.jpg', False)
 
 keypointsList = applyGaussianFilter(image, colorImage)
-for keypointImage,keypointValue in keypointsList.items():
+for keypinputointImage,keypointValue in keypointsList.items():
     writeImage(keypointImage, keypointValue)
 
